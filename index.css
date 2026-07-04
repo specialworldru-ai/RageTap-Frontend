@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#050508] text-white;
+  }
+}
+
+/* Для всех браузеров на базе Chromium (Chrome, Edge, Opera) */
+
+/* Ширина всей полосы прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Фон полосы прокрутки (трек) */
+::-webkit-scrollbar-track {
+  background: #050508; /* Тот же цвет, что и фон твоего приложения */
+}
+
+/* Сама "ползунок" (то, что мы двигаем) */
+::-webkit-scrollbar-thumb {
+  background: #333; /* Тёмно-серый цвет */
+  border-radius: 4px;
+}
+
+/* Цвет ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
+}
